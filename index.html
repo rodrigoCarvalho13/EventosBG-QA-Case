@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://media.base44.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#1D3E2D" />
+
+    <!-- Prévia ao compartilhar o link (WhatsApp, Facebook, Telegram, X...).
+         Precisa de URL absoluta: os robôs desses apps não rodam JavaScript. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="eventosboardgame.com" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Eventos de board game no DF | eventosboardgame.com" />
+    <meta property="og:description" content="Agenda de eventos de board game no DF: encontros semanais, campeonatos e feiras, além de lojas, ludotecas, grupos, influencers e podcasts da comunidade." />
+    <meta property="og:image" content="https://eventosboardgame.com/og-image.jpg" />
+    <meta property="og:image:secure_url" content="https://eventosboardgame.com/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Logo do eventosboardgame.com: pin de mapa com um meeple sobre o Congresso Nacional" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Eventos de board game no DF | eventosboardgame.com" />
+    <meta name="twitter:description" content="Agenda de eventos de board game no DF: encontros semanais, campeonatos e feiras, além de lojas, ludotecas, grupos, influencers e podcasts da comunidade." />
+    <meta name="twitter:image" content="https://eventosboardgame.com/og-image.jpg" />
+    <title>Eventos de board game no DF | eventosboardgame.com</title>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" async defer></script>
+    <meta name="description" content="Agenda de eventos de board game no DF: encontros semanais, campeonatos e feiras, além de lojas, ludotecas, grupos, influencers e podcasts da comunidade." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="eventosboardgame" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Aplica o tema (claro/escuro) antes de pintar a página, para não piscar. -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          var dark = t === "dark";
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <h1>eventosboardgame.com — Eventos de board game no DF</h1>
+      <p>Agenda de eventos de board game no DF: encontros semanais, campeonatos e feiras, além de lojas, ludotecas, grupos, monitores, influencers e podcasts da comunidade. Ative o JavaScript para usar o site.</p>
+      <nav>
+        <a href="/eventos">Programação</a>
+        <a href="/lojas">Lojas e espaços</a>
+        <a href="/influencers">Influencers</a>
+        <a href="/monitores">Monitores</a>
+        <a href="/podcasts">Podcasts</a>
+        <a href="/sugerir">Sugerir um evento</a>
+        <a href="/sobre">Sobre</a>
+      </nav>
+    </noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

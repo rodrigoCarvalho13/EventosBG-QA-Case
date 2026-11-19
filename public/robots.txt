@@ -1,0 +1,11 @@
+# eventosboardgame.com
+User-agent: *
+Allow: /
+Disallow: /painel
+Disallow: /login
+Disallow: /register
+Disallow: /forgot-password
+Disallow: /reset-password
+Disallow: /cadastrar
+
+Sitemap: https://eventosboardgame.com/sitemap.xml

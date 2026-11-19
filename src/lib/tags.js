@@ -1,0 +1,16 @@
+export const SUGGESTED_TAGS = [
+  "RPG",
+  "Card Game",
+  "Eurogame",
+  "Party Game",
+  "Wargame",
+  "Cooperativo",
+  "Familiar",
+  "Pesado",
+  "Draft",
+  "Colecionável",
+  "Feira",
+  "Feirão",
+  "Acampamento",
+  "Encontro",
+];

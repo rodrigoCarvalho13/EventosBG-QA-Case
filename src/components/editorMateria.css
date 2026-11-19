@@ -1,0 +1,98 @@
+.editor-materia .ql-toolbar.ql-snow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: hsl(var(--border));
+  border-radius: 0.75rem 0.75rem 0 0;
+  background: hsl(var(--card));
+}
+
+.editor-materia .ql-container.ql-snow {
+  min-height: 16rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: hsl(var(--border));
+  border-radius: 0 0 0.75rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.editor-materia .ql-editor {
+  min-height: 16rem;
+}
+
+.editor-materia .ql-snow .ql-picker,
+.editor-materia .ql-snow button {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+}
+
+.editor-materia .ql-snow .ql-stroke {
+  stroke: currentColor;
+}
+
+.editor-materia .ql-snow .ql-fill {
+  fill: currentColor;
+}
+
+.editor-materia .ql-snow .ql-picker.ql-size {
+  width: auto;
+  min-width: 6.5rem;
+}
+
+.editor-materia .ql-snow .ql-picker.ql-size .ql-picker-label::before,
+.editor-materia .ql-snow .ql-picker.ql-size .ql-picker-item::before { content: "Normal"; }
+.editor-materia .ql-snow .ql-picker.ql-size .ql-picker-label[data-value="small"]::before,
+.editor-materia .ql-snow .ql-picker.ql-size .ql-picker-item[data-value="small"]::before { content: "Pequeno"; }
+.editor-materia .ql-snow .ql-picker.ql-size .ql-picker-label[data-value="large"]::before,
+.editor-materia .ql-snow .ql-picker.ql-size .ql-picker-item[data-value="large"]::before { content: "Grande"; }
+.editor-materia .ql-snow .ql-picker.ql-size .ql-picker-label[data-value="huge"]::before,
+.editor-materia .ql-snow .ql-picker.ql-size .ql-picker-item[data-value="huge"]::before { content: "Enorme"; }
+
+.editor-materia .ql-snow .ql-picker.ql-header .ql-picker-label::before,
+.editor-materia .ql-snow .ql-picker.ql-header .ql-picker-item::before { content: "Texto"; }
+.editor-materia .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="2"]::before,
+.editor-materia .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before { content: "Título"; }
+.editor-materia .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="3"]::before,
+.editor-materia .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before { content: "Subtítulo"; }
+
+.editor-materia .ql-editor .ql-size-small,
+.materia-corpo .ql-size-small { font-size: 0.75em; }
+.editor-materia .ql-editor .ql-size-large,
+.materia-corpo .ql-size-large { font-size: 1.5em; }
+.editor-materia .ql-editor .ql-size-huge,
+.materia-corpo .ql-size-huge { font-size: 2.25em; }
+.materia-corpo .ql-align-center { text-align: center; }
+.materia-corpo .ql-align-right { text-align: right; }
+.materia-corpo .ql-align-justify { text-align: justify; }
+.materia-corpo li[data-list="bullet"] { display: list-item; list-style-type: disc; }
+.materia-corpo li[data-list="ordered"] { display: list-item; list-style-type: decimal; }
+.materia-corpo .ql-ui { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .carrossel-materia-foto {
+    animation: none !important;
+  }
+}
+
+.carrossel-materia-foto.entra-dir {
+  animation: materia-entra-dir 450ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.carrossel-materia-foto.entra-esq {
+  animation: materia-entra-esq 450ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes materia-entra-dir {
+  from { opacity: 0; transform: translateX(28px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes materia-entra-esq {
+  from { opacity: 0; transform: translateX(-28px); }
+  to { opacity: 1; transform: none; }
+}
